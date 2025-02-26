@@ -9,7 +9,7 @@ build:
   skip: false
 run:
   image: docker
-  command: n8n
+  command: docker-compose up -d
   args: null
   persistenceMount: /data
-  containerPort: "443"
+  containerPort: 443
