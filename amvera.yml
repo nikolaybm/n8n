@@ -5,11 +5,11 @@ meta:
     name: docker
     version: latest
 build:
-  dockerfile: Dockerfile
+  dockerfile: dockerfile
   skip: false
 run:
-  image: docker
-  command: docker-compose up -d
-  args: null
+  image: https://github.com/nikolaybm/n8n/tree/master/dockerfileocker/images/n8n-base
+  command: ""
+  args: ""
   persistenceMount: /data
   containerPort: 443
